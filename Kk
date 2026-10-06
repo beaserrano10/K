@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int n = input.nextInt();
+
+        // Loop from 1 up to n
+        for (int i = 1; i <= n; i++) {
+            // Skip numbers not divisible by 30 (example logic adjusted for standard syntax)
+            if (i % 30 != 0) {
+                continue;
+            }
+            
+            // Print if divisible by 30
+            System.out.println(i);
+            
+            // Stop/break if i reaches or exceeds 30 (or custom condition)
+            if (i >= 30) {
+                break;
+            }
+        }
+
+        input.close();
+    }
+}
+Use code with
